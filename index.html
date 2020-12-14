@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find A Drug Rehab Center - Addiction Helpline America</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Yantramanav:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://use.fontawesome.com/06c5fd5dae.js"></script>
+    <link rel="stylesheet" href="./fonts/fontawesome-webfont.woff">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places"></script>
+    <script>
+        function initialize() {
+            var input = document.getElementById('searchquery');
+            var options = {
+                types: ['(cities)'],
+                componentRestrictions: {
+                    country: "us"
+                }
+            }
+
+            var autocomplete = new google.maps.places.Autocomplete(input, options)
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                var place = autocomplete.getPlace()
+            });
+
+            var treatment = document.getElementById('treatment_location');
+            var autocomplete1 = new google.maps.places.Autocomplete(treatment, options);
+            google.maps.event.addListener(autocomplete1, 'place_changed', function () {
+                var place = autocomplete1.getPlace();
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <!-- top bar -->
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="#" class="logo-text">
+                        <img src="./images/logo.png" alt="">
+                        <!-- <span class="logo-text-primary">Addiction</span>
+                <span class="logo-text-secondary">Center</span> -->
+                    </a>
+                </div>
+                <div class="header-cta">
+                    <div class="header-cta-text-box">
+                        <span class="header-cta-text">
+                            Get Help Now. Call Addiction Helpline America Today
+                        </span>
+                        <a class="header-cta-disclosure" href="#" tabindex="0">
+                            <span class="fa fa-info-circle"></span> Calls will be forwarded to these treatment providers
+                        </a>
+                    </div>
+                    <a class="header-cta-phone-number" href="tel:(844)377-8070">
+                        <svg class="header-cta-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512">
+                            <g>
+                                <path
+                                    d="M272,0H48C21.5,0,0,21.5,0,48v416c0,26.5,21.5,48,48,48l0,0h224c26.5,0,48-21.5,48-48l0,0V48C320,21.5,298.5,0,272,0z
+                  M160,480c-17.7,0-32-14.3-32-32s14.3-32,32-32s32,14.3,32,32S177.7,480,160,480z
+                  M272,372c0,6.6-5.4,12-12,12H60c-6.6,0-12-5.4-12-12V60c0-6.6,5.4-12,12-12h200c6.6,0,12,5.4,12,12V372z">
+                                </path>
+                                <path
+                                    d="M272,372c0,6.6-5.4,12-12,12H60c-6.6,0-12-5.4-12-12V60c0-6.6,5.4-12,12-12h200c6.6,0,12,5.4,12,12V372z"
+                                    opacity="0.4"></path>
+                            </g>
+                        </svg> (844) 377-8070
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End topbar -->
+        <!-- Navigataion -->
+        <nav class="navigation">
+            <ul class="navigation-menu">
+                <li class="navigation-item">
+                    <a href="" class="navigation-item-link">
+                        <svg class="icon-menu-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <title>Rehab Icon</title>
+                            <path
+                                d="M554.1,161.2L416,224v288l139.9-56c12.2-4.9,20.1-16.6,20.1-29.7V176c0-8.8-7.2-16-16-16C558,160,555.9,160.4,554.1,161.2z
+                  M20.1,216C8,220.9,0,232.6,0,245.7V496c0,8.8,7.2,16,16,16c2,0,4.1-0.4,5.9-1.1L160,448V214.9c-8.4-14.8-15.5-30.4-21.2-46.4L20.1,216z
+                  M288,359.7c-14.1,0-27.4-6.2-36.5-17c-19.7-23.2-40.6-49.6-59.5-76.7v182l192,64V266c-18.9,27.1-39.8,53.5-59.5,76.7C315.4,353.5,302.1,359.7,288,359.7z"
+                                style="opacity: 0.4;"></path>
+                            <path
+                                d="M288,0c-69.6,0-126,56.4-126,126c0,56.3,82.4,158.8,113.9,196c5.6,6.7,15.5,7.6,22.2,2c0.7-0.6,1.4-1.3,2-2C331.7,284.8,414,182.3,414,126C414,56.4,357.6,0,288,0z
+                  M288,168c-23.2,0-42-18.8-42-42c0-23.2,18.8-42,42-42c23.2,0,42,18.8,42,42C330,149.2,311.2,168,288,168z">
+                            </path>
+                        </svg>
+                        <span class="navigation-item-text">Find Rehab</span>
+                        <span class="navigation-item-toggle fa fa-angle-down"></span>
+                    </a>
+                    <div class="navigation__submenu">
+                        <div class="navigation__submenu-container">
+                            <div class="navigation__submenu-menu">
+                                <form class="Form Form--horizontal Form--rehab-search Form--submenu" action="/rehabs/"
+                                    method="get">
+                                    <input id="searchquery" class="Form__input pac-target-input" type="text"
+                                        name="location" placeholder="Start Typing A City..." autocomplete="off" />
+                                    <button class="btn btn-small btn-primary">
+                                        <span class="fa fa-search"></span>
+                                        <span class="btn-text">Search</span>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="navigation__subpanel">
+                                <p class="navigation__subpanel-title">Featured Center</p>
+                                <div class="Card Card--rehab-feat Card--rehab-submenu">
+                                    <picture class="Card__thumbnail">
+                                        <source
+                                            data-lazy-srcset="./img/rehabs/daylight-recovery-center-west-palm-beach-fl.png"
+                                            media="(min-width: 52em)">
+                                        <source
+                                            data-lazy-srcset="./img/rehabs/daylight-recovery-center-west-palm-beach-fl.png"
+                                            media="(min-width: 40em)">
+                                        <img class="Card__img"
+                                            src="./images/daylight-recovery-center-west-palm-beach-fl.png"
+                                            alt="Thumbnail of Recovery Unplugged &amp;#8211; Harrison House of Northern Virginia"
+                                            data-lazy-src="./img/rehabs/daylight-recovery-center-west-palm-beach-fl.png" />
+                                    </picture>
+                                    <div class="Card__content">
+                                        <p class="Card__heading">
+                                            Daylight Recovery Center
+                                        </p>
+                                        <p class="Card__meta">
+                                            <span class="fa fa-map-marker"></span>
+                                            <span>West Palm Beach, FL</span>
+                                        </p>
+                                        <p class="Card__link">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/daylight-recovery-center-west-palm-beach-fl"
+                                                target="_blank">
+                                                View Center ⟶
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </li>
+                <li class="navigation-item">
+                    <a href="" class="navigation-item-link">
+                        <svg class="icon-menu-item icon-addiction" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
+                            <title>Addiction Icon</title>
+                            <path
+                                d="M555.3,300.1l-64.9-92.8L303,338.4l65,92.8c36.2,51.7,107.5,64.3,159.2,28.1S591.5,351.8,555.3,300.1z">
+                            </path>
+                            <path
+                                d="M425.4,114.5c-36.2-51.7-107.5-64.3-159.2-28.1c-15.6,10.9-27.6,25-35.8,40.8c9.2,4.9,17.7,10.5,25.3,17.2c22,19.5,32.7,45.5,32.7,79.4v93.6l14.7,20.9l187.4-131.1L425.4,114.5z"
+                                opacity="0.4"></path>
+                            <path d="M192.6,412.6l-128,0.4l-0.6-152.8h128.2L192.6,412.6z" opacity="0.4"></path>
+                            <path d="M158.1,0H98.1c-8.9,0-15.9,7.9-15.9,16.6L80,138.2c-46.9,19-80,31.8-80,85.6v224.1C0,483.2,28.6,512,64.1,512h128.2c35.3,0,64.1-28.6,64.1-64.1V223.8c0-53.8-33.1-66.6-80-85.6l-2.2-121.6C174,7.9,167,0,158.1,0L158.1,0z
+                M192.1,413h-128V260.3h128.2V413H192.1z">
+                            </path>
+                        </svg>
+                        <span class="navigation-item-text">Addictions</span>
+                        <span class="navigation-item-toggle fa fa-angle-down"></span>
+                    </a>
+                    <div class="navigation__submenu navigation__submenu--no-panel">
+                        <div class="navigation__submenu-container">
+                            <div class="navigation__submenu-menu second">
+                                <ul class="navigation__submenu-list navigation__submenu-list--two-col">
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-652843">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/alcohol/"
+                                            class="menulink">
+                                            Alcohol <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-behaviors">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/benzodiazepines/"
+                                            class="menulink">
+                                            Benzodiazepines <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-antidepressants-2">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/cocaine/"
+                                            class="menulink">
+                                            Cocaine <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-benzodiazepines">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/heroin/"
+                                            class="menulink">
+                                            Heroin <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-652852">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/meth/"
+                                            class="menulink">
+                                            Meth <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-inhalants">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/opioids/"
+                                            class="menulink">
+                                            Opioids <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navigation-item">
+                    <a href="" class="navigation-item-link">
+                        <svg class="icon-menu-item icon-treatment" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <title>Treatment Icon</title>
+                            <path fill="currentColor" d="M335 63h-80a64 64 0 0 1 64 64H63a64 64 0
+                0 1 64-64H47a48 48 0 0 0-48 48v352a48 48 0 0
+                0 48 48h288a48 48 0 0 0 48-48V111a48 48 0 0
+                0-48-48zm-47 281a8 8 0 0 1-8 8h-56v56a8 8 0
+                0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0
+                1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1
+                8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8z" opacity="0.4"></path>
+                            <path fill="currentColor" d="M255 63a64 64 0 0 0-128 0 64 64 0 0 0-64
+                64h256a64 64 0 0 0-64-64zm-64 24a24 24 0 1 1
+                24-24 23.94 23.94 0 0 1-24 24zm89
+                201h-56v-56a8 8 0 0 0-8-8h-48a8 8 0 0 0-8
+                8v56h-56a8 8 0 0 0-8 8v48a8 8 0 0 0 8
+                8h56v56a8 8 0 0 0 8 8h48a8 8 0 0 0
+                8-8v-56h56a8 8 0 0 0 8-8v-48a8 8 0 0
+                0-8-8z">
+                            </path>
+                        </svg>
+                        <span class="navigation-item-text">Levels of Care</span>
+                        <span class="navigation-item-toggle fa fa-angle-down"></span>
+                    </a>
+                    <div class="navigation__submenu">
+                        <div class="navigation__submenu-container">
+                            <div class="navigation__submenu-menu">
+                                <ul class="navigation__submenu-list">
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-types-of-treatment">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/detoxification/"
+                                            class="menulink">
+                                            Detoxification
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-paying-for-rehab">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/residential-treatment/"
+                                            class="menulink">
+                                            Residential Treatment
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-treatment-medications">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/inpatient-treatment/"
+                                            class="menulink">
+                                            Inpatient Treatment
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-652883">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/partial-hospitalization-php/"
+                                            class="menulink">
+                                            Partial Hospitalization Program (PHP)
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-653694">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/outpatient-treatment/"
+                                            class="menulink">
+                                            Outpatient Program
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-652885">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/medication-assisted-treatment/"
+                                            class="menulink">
+                                            Medication Assisted Treatment (MAT)
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navigation__subpanel">
+                                <p class="navigation__subpanel-title">Understanding Addiction</p>
+                                <ul class="QuestionsList col-12">
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/what-is-addiction/">
+                                            <span class="QuestionsList__link-text">What Is Addiction?</span>
+                                        </a>
+                                    </li>
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/signs-of-addiction/">
+                                            <span class="QuestionsList__link-text">Signs Of Addiction</span>
+                                        </a>
+                                    </li>
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/confronting-addiction/">
+                                            <span class="QuestionsList__link-text">Confronting Addiction?</span>
+                                        </a>
+                                    </li>
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/disease-of-addiction/">
+                                            <span class="QuestionsList__link-text">Disease Of Addiction?</span>
+                                        </a>
+                                    </li>
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/staging-an-intervention/">
+                                            <span class="QuestionsList__link-text">Staging An Intervention?</span>
+                                        </a>
+                                    </li>
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/withdrawal-timelines/">
+                                            <span class="QuestionsList__link-text">Withdrawal Timelines?</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navigation-item">
+                    <a href="" class="navigation-item-link">
+                        <svg class="icon-menu-item icon-news" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <title>News Icon</title>
+                            <path d="M256,192c-53,0-96-43-96-96s43-96,96-96s96,43,96,96S309,192,256,192z">
+                            </path>
+                            <path
+                                d="M233.6,241.1c-59.3-36.3-155.4-46.3-203.8-49c-16.3-1-29.8,11.4-29.8,27v222.8c0,14.3,11.6,26.3,26.5,27.1c43.7,2.3,132,10.7,193,41.4c9.4,4.7,20.5-1.7,20.5-11.9v-246C240,247.9,237.6,243.5,233.6,241.1L233.6,241.1z">
+                            </path>
+                            <path
+                                d="M482.2,192.1c-48.4,2.7-144.5,12.7-203.8,49c-4,2.5-6.5,6.9-6.4,11.6v245.8c0,10.2,11.1,16.6,20.5,11.9c61-30.7,149.3-39.1,193-41.4c14.9-0.8,26.5-12.7,26.5-27V219.1C512,203.5,498.5,191.1,482.2,192.1L482.2,192.1z"
+                                style="opacity:0.4">
+                            </path>
+                        </svg>
+                        <span class="navigation-item-text">Videos &amp; Blog</span>
+                        <span class="navigation-item-toggle fa fa-angle-down"></span>
+                    </a>
+                </li>
+                <li class="navigation-item" id="nav-item-search">
+                    <a href="" class="navigation-item-link">
+                        <svg class="icon-menu-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <title>Search Icon</title>
+                            <path d="M208 80a128 128 0 1 1-90.51 37.49A127.15
+                127.15 0 0 1 208 80m0-80C93.12 0 0 93.12 0
+                208s93.12 208 208 208 208-93.12
+                208-208S322.88 0 208 0z" style="opacity:0.4"></path>
+                            <path d="M504.9 476.7L476.6 505a23.9 23.9 0 0
+                1-33.9 0L343 405.3a24 24 0 0
+                1-7-17V372l36-36h16.3a24 24 0 0 1 17 7l99.7
+                99.7a24.11 24.11 0 0 1-.1 34z">
+                            </path>
+                        </svg>
+                        <span class="navigation-item-text">Search</span>
+                        <span class="navigation-item-toggle fa fa-angle-down"></span>
+                    </a>
+                    <div class="navigation__submenu navigation__submenu--no-panel">
+                        <div class="navigation__submenu-container">
+                            <div class="navigation__subpanel" style="border:none;padding:0;display:block;width:100%;">
+                                <form class="Form Form--horizontal Form--search Form--subpanel" action="/" method="get"
+                                    role="search">
+                                    <input class="Form__input" type="search" name="s"
+                                        placeholder="Search By A Facility's Name">
+                                    <button class="btn btn-small btn-primary" type="submit">
+                                        <span class="fa fa-search"></span>
+                                        <span class="btn-text">Search</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- Main -->
+    <!-- Newsletter start -->
+    <div id="content">
+        <main class="main-content">
+        </main>
+    </div>
+    <!-- Newsletter End -->
+    <!-- Hero -->
+    <div class="hero">
+        <picture class="photo">
+            <img class="Photo__img lazyloaded" src="./images/background.jpg" alt="">
+        </picture>
+        <div class="container">
+            <h1 class="hero-title">It's Time To Make A Difference</h1>
+            <p class="hero-subtitle">
+                Finding the best addiction treatment services for yourself or a loved one can be a stressful process. We
+                are here to help you on your road to recovery. If you are feeling overwhelmed, reach out to our
+                addiction specialists today.
+            </p>
+            <div class="split-cta split-cta-hero">
+                <p class="split-cta-heading"> It's Never Too Late for Change </p>
+                <p class="split-cta-left" style="margin:0 auto">
+                    <span class="split-cta-label">Make that call</span>
+                    <a class="btn btn-block btn-primary phone-number" href="tel:+18443778070">(844) 377-8070</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+    <!-- Section map -->
+    <section class="home-section section-map">
+        <div class="container">
+            <div class="section-map-text">
+                <h2 class="md-hide mt1">Our Featured Facilities</h2>
+                <h2 class="xs-hide mt1">Browse A Drug Rehab Center By State
+                </h2>
+                <p>
+                    Addiction Helpline America Provides Resources And Links To The Best Drug And Alcohol Rehabs Centers
+                    Across The Country. Our Goal Is To Make Finding The Best Drug And Alcohol Addiction Recovery Service
+                    Provider That Matches Your Individual Needs Easy.
+                </p>
+            </div>
+            <div class="states">
+                <ul class="state-links">
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./alabama.html">
+                            Alabama <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./alaska/">
+                            Alaska <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./arizona/">
+                            Arizona <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./arkansas/">
+                            Arkansas <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./california/">
+                            California <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./colorado/">
+                            Colorado <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./connecticut/">
+                            Connecticut <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./delaware/">
+                            Delaware <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./florida/">
+                            Florida <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./georgia/">
+                            Georgia <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./hawaii/">
+                            Hawaii <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./idaho/">
+                            Idaho <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./illinois/">
+                            Illinois <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./indiana/">
+                            Indiana <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./iowa/">
+                            Iowa <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./kansas/">
+                            Kansas <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./kentucky/">Kentucky <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./louisiana/">Louisiana <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./maine/">Maine <span class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./maryland/">Maryland <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./massachusetts/">Massachusetts <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./michigan/">Michigan <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./minnesota/">Minnesota <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./mississippi/">Mississippi <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./missouri/">Missouri <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./montana/">Montana <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./nebraska/">Nebraska <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./nevada/">Nevada <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./new-hampshire/">New Hampshire <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./new-jersey/">New Jersey <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./new-mexico/">New Mexico <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./new-york/">New York <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./north-carolina/">North Carolina <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./north-dakota/">North Dakota <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./ohio/">Ohio <span class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./oklahoma/">Oklahoma <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./oregon/">Oregon <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./pennsylvania/">Pennsylvania <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./rhode-island/">Rhode Island <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./south-carolina/">South Carolina <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./south-dakota/">South Dakota <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./tennessee/">Tennessee <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./texas/">Texas <span class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./utah/">Utah <span class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./vermont/">Vermont <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./virginia/">Virginia <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./washington/">Washington <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./west-virginia/">West Virginia <span
+                                class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./wisconsin/">
+                            Wisconsin <span class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./wyoming/">
+                            Wyoming <span class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./guam/">
+                            Guam <span class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./puerto-rico/">
+                            Puerto Rico <span class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./us-pacific-islands/">
+                            US Pacific Islands <span class="fa fa-angle-right"></span></a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./us-virgin-islands/">
+                            US Virgin Islands <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li class="state-links-item">
+                        <a class="btn btn-blue-darker" href="./washington-dc/">
+                            Washington D.C. <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End section map-->
+    <!-- Featured section-->
+    <section class="home-section section-featured">
+        <h2>Find A Drug or Alcohol Rehab Center Near You</h2>
+        <div class="container">
+            <div class="rehabs-search">
+                <form action="" class="rehabs-search-form">
+                    <input class="Form__input pac-target-input" type="search" name="location" value=""
+                        placeholder="Find a Treatment Center By Name" id="treatment_location">
+                    <button class="btn btn-small btn-primary">Go</button>
+                </form>
+            </div>
+            <section class="home-section section-rehabs-search">
+                <h2>Or Browse Our Verified Rehab Centers</h2>
+                <div class="Card--sponsored-home">
+                    <span class="header-cta-disclosure"> Verified Rehabs </span><br>
+                </div>
+                <!-- Cards -->
+                <div class="container-fluid p-0 pt-md-3 center fadeIn animated" data-animate="fadeIn">
+                    <div class="container">
+                        <div class="row h-100 justify-content-center mt-3 mb-3">
+                            <div class="col-12 col-sm-6 col-md-3 mb-5">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top" src="./images/wellbridge6-calverton-ny.jpg"
+                                            alt="Photo of Wellbridge in Calverton , NY" />
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem !important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/wellbridge-calverton-ny"
+                                                title="Learn About Wellbridge" class="stretched-link"
+                                                target="_blank">Wellbridge</a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300;border: 1px #ddd solid;">
+                                                +2 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(855)750-0554</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            Calverton , NY
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top"
+                                            src="./images/miramar-recovery-center-costa-mesa-ca.jpg"
+                                            alt="Photo of Miramar Recovery Center in Costa Mesa, CA" />
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem!important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/miramar-recovery-center-costa-mesa-ca"
+                                                title="Learn About Miramar Recovery Center" class="stretched-link"
+                                                target="_blank">
+                                                Miramar Recovery Center
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +3 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(844) 407-0844</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            Costa Mesa, CA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top"
+                                            src="./images/daylight-recovery-center-west-palm-beach-fl.png"
+                                            alt="Photo of Daylight Recovery Center in West Palm Beach, FL" />
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem!important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/daylight-recovery-center-west-palm-beach-fl"
+                                                title="Learn About Daylight Recovery Center" class="stretched-link"
+                                                target="_blank">
+                                                Daylight Recovery Center
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +2 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(844) 467-1233</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            West Palm Beach, FL
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top" src="./images/legacy-healing-center-photo.jpg"
+                                            alt="Photo of Legacy Healing Center in Margate, FL">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem !important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/legacy-healing-center-pompano-beach-fl"
+                                                title="Learn About Legacy Healing Center" class="stretched-link"
+                                                target="_blank">
+                                                Legacy Healing Center
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +5 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(844) 517-0030</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            Margate, FL
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- View ALL -->
+                            <div class="col-12 col-sm-6 col-md-3 mb-5 view-more" style="display: none;">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top"
+                                            src="./images/annie-s-house-a-steps-recovery-center-facility-draper-ut.jpg"
+                                            alt="Photo of Annie's House - A Steps Recovery Center Facility in Draper, UT">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem !important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/annie-s-house-a-steps-recovery-center-facility-draper-ut"
+                                                title="Learn About Annie's House - A Steps Recovery Center Facility"
+                                                class="stretched-link" target="_blank">Annie's
+                                                House - A Steps Recovery Center Facility
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +6 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(844) 294-8974</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem;font-weight: 600;">
+                                            Draper, UT
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5 view-more" style="display: none;">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top" src="./images/rancho-milagro-recovery-temecula-ca.jpg"
+                                            alt="Photo of Rancho Milagro Recovery in Temecula, CA">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem !important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/rancho-milagro-recovery-temecula-ca"
+                                                title="Learn About Rancho Milagro Recovery" class="stretched-link"
+                                                target="_blank">
+                                                Rancho Milagro Recovery
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +3 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(844) 418-0027</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            Temecula, CA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5 view-more" style="display: none;">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top" src="./images/steps-recovery-centers-payson-ut.jpg"
+                                            alt="Photo of Steps Recovery Centers in Payson, UT">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem!important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/steps-recovery-centers-payson-ut"
+                                                title="Learn About StepsRecovery Centers" class="stretched-link"
+                                                target="_blank">
+                                                Steps Recovery Centers
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Residential
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(855) 790-7705</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem;font-weight: 600;">
+                                            Payson, UT
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5 view-more" style="display: none;">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top"
+                                            src="./images/harmony-ridge-recovery-center-walker-wv.jpg"
+                                            alt="Photo of Harmony Ridge Recovery Center in Walker, WV">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem !important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/harmony-ridge-recovery-center-walker-wv"
+                                                title="Learn About Harmony Ridge Recovery Center" class="stretched-link"
+                                                target="_blank">
+                                                Harmony Ridge Recovery Center
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +4 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(833) 768-0151</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            Walker, WV
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="center mb3">
+                            <button class="btn btn-primary" onclick="viewall_cards(this);">View All</button>
+                        </p>
+                        <script>
+                            function viewall_cards(item) {
+                                var text = item.textContent;
+                                var views = document.querySelectorAll(".view-more");
+                                if (text == "View All") {
+                                    views.forEach((view) => {
+                                        console.log(view);
+                                        view.style.display = "block";
+                                    });
+                                    item.textContent = "View Less";
+                                } else {
+                                    views.forEach((view) => {
+                                        view.style.display = "none";
+                                    });
+                                    item.textContent = "View All";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <!-- Cards end-->
+            </section>
+        </div>
+    </section>
+    <!-- End featured section -->
+    <!-- Video Section -->
+    <section class="PageSection__video">
+        <div class="PageSection__video__container">
+            <div class="PageSection__video__bg">
+                <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zsfq4xcrZ5s" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+            <div class="PageSection__video__content EditorContent">
+                <h3 class="PageSection__video__title">Covid-19 and Mental Heath Data: By Allie Severino</h3>
+                <p>
+                    The COVID-19 pandemic has had some jarring effects on America’s mental health. In this video we go
+                    through the data on substance use, overdose, suicidal thoughts, depression and much more. We also
+                    talk about the importance of staying physically and mentally
+                    fit during stressful times
+                </p>
+            </div>
+        </div>
+        <div class="PageSection__split-menu">
+            <div class="container">
+                <div class="SplitMenu">
+                    <div class="SplitMenu__col SplitMenu__col--left">
+                        <h3 class="SplitMenu__heading">Addiction-Recovery Government Agencies</h3>
+                        <ul class="SplitMenu__list">
+                            <li>
+                                <a href="#">National Institute of Alcohol Abuse and Alcoholism (niaaa.nih.gov)</a>
+                            </li>
+                            <li>
+                                <a href="#">National Institute of Drug Abuse (nida.nih.gov)</a>
+                            </li>
+                            <li>
+                                <a href="#">Substance Abuse &amp; Mental Health Services Administration (samhsa.gov)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="SplitMenu__col SplitMenu__col--right">
+                        <h3 class="SplitMenu__heading">Links for Family and Friends of People with Addiction.</h3>
+                        <ul class="SplitMenu__list">
+                            <li>
+                                <a href="#">Adultchildren.org (adultchildren.org) For adult children of alcoholics and
+                                    addicts.</a>
+                            </li>
+                            <li>
+                                <a href="#">Al-Anon.org (al-anon.org) For family members of alcoholics.</a>
+                            </li>
+                            <li>
+                                <a href="#">Nar-anon.org (nar-anon.org) For family members of addicts.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End video section -->
+    <!-- Blog Section -->
+    <section class="HomePage__blog-section PageSection PageSection--blog-latest-posts">
+        <div class="container">
+            <h1 class="CardStack__heading">Addiction Quizzes</h1>
+            <p>How do you know if you or someone you care about needs addiction treatment? Take one of our addiction
+                quizzes today to help you decide if it's time to seek professional help. If you have any questions
+                please do not hesitate to call one of our specialists
+                at (844) 377-8070.
+            </p>
+            <div class="row clearfix h-100">
+                <div class="col-12 col-md-4 mb-5 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img-caption ohidden">
+                            <img class="card-img-top" src="./images/oregon-chooses-rehab-over-jail-prev.jpg"
+                                alt="Decriminalizing Hard Drugs: Oregon Replaces Jail Time with Addiction Recovery Centers">
+                        </div>
+                        <div class="card-body">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> November 14, 2020
+                            <h3 class="card-title mt-0" style="font-size: 1rem;">
+                                <a href="#read" class="stretched-link">
+                                    Decriminalizing Hard Drugs: Oregon Replaces Jail Time with Addiction Recovery
+                                    Centers
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="card-footer center">
+                            <a href="#read" class="button button-blue button-rounded ml-0 stretched-link center"
+                                style="width:100%;" target="_blank">
+                                Read Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-5 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img-caption ohidden">
+                            <img class="card-img-top" src="./images/oregon-chooses-rehab-over-jail-prev.jpg"
+                                alt="Decriminalizing Hard Drugs: Oregon Replaces Jail Time with Addiction Recovery Centers">
+                        </div>
+                        <div class="card-body">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> April 23, 2020
+                            <h3 class="card-title mt-0" style="font-size: 1rem;">
+                                <a href="#read" class="stretched-link">
+                                    Specialists You Will Find in a Drug Rehab Center
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="card-footer center">
+                            <a href="#read" class="button button-blue button-rounded ml-0 stretched-link center"
+                                style="width: 100%;" target="_blank">
+                                Read Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-5 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img-caption ohidden">
+                            <img class="card-img-top" src="./images/oregon-chooses-rehab-over-jail-prev.jpg"
+                                alt="Decriminalizing Hard Drugs: Oregon Replaces Jail Time with Addiction Recovery Centers">
+                        </div>
+                        <div class="card-body">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> April 21, 2020
+                            <h3 class="card-title mt-0" style="font-size: 1rem;">
+                                <a href="#read" class="stretched-link">Top Recreational Activities in a Drug Rehab
+                                    Center</a>
+                            </h3>
+                        </div>
+                        <div class="card-footer center">
+                            <a href="#read" class="button button-blue button-rounded ml-0 stretched-link center"
+                                style="width:100%;" target="_blank">
+                                Read Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End blog section -->
+    <!-- Footer cta -->
+    <section class="HomePage__footer-cta">
+        <div class="Container Container--lvl4">
+            <p class="split-cta-heading">Start Your Road To Recovery Today!</p>
+            Don't wait another minute for that right moment to be set free. Take that bold step and call Addiction
+            Helpline America today.
+            <p class="split-cta-left">
+                <span class="split-cta-label">Make that call</span>
+                <a class="btn btn-block btn-primary phone-number" href="tel:+18443778070">(844) 377-8070</a>
+            </p>
+        </div>
+    </section>
+    <!-- End footer cta-->
+    <!-- Blog 2nd-->
+    <section class="HomePage__blog-section PageSection PageSection--blog-latest-posts">
+        <div class="container">
+            <h1 class="CardStack__heading">Source for Addiction and Substance Abuse Treatment News.</h1>
+            <div class="row clearfix mb-5 h-100">
+                <div class="col-12 col-md-4 d-flex align-items-stretch">
+                    <div class="card mt-4">
+                        <img class="card-img-top" src="./images/allie-severino-what-is-mat-meta.jpg"
+                            alt="Addiction Recovery News - March 29th, 2020">
+                        <div class="card-body center">
+                            <h3 class="card-title mt-0" style="font-size:1rem;">
+                                <a href="#video" class="stretched-link" target="_blank">Addiction Recovery News - March
+                                    29th, 2020</a>
+                            </h3>
+                        </div>
+                        <div class="card-footer center">
+                            <a href="#video" class="button button-blue button-rounded ml-0 stretched-link center"
+                                style="width: 100%;" target="_blank">
+                                Watch Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex align-items-stretch">
+                    <div class="card mt-4">
+                        <img class="card-img-top" src="./images/allie-severino-what-is-mat-meta.jpg"
+                            alt="Addiction Recovery News - March 29th,2020">
+                        <div class="card-body center">
+                            <h3 class="card-title mt-0" style="font-size:1rem;">
+                                <a href="#video" class="stretched-link" target="_blank">
+                                    Addiction Recovery News - March 29th, 2020
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="card-footer center">
+                            <a href="#video" class="button button-blue button-rounded ml-0 stretched-link center"
+                                style="width: 100%;" target="_blank">
+                                Watch Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex align-items-stretch">
+                    <div class="card mt-4">
+                        <img class="card-img-top" src="./images/allie-severino-what-is-mat-meta.jpg"
+                            alt="Addiction Recovery News - March 29th,2020">
+                        <div class="card-body center">
+                            <h3 class="card-title mt-0" style="font-size:1rem;">
+                                <a href="#video" class="stretched-link" target="_blank">
+                                    Addiction Recovery News - March 29th, 2020
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="card-footer center">
+                            <a href="#video" class="button button-blue button-rounded ml-0 stretched-link center"
+                                style="width: 100%;" target="_blank">
+                                Watch Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog 2nd -->
+    <!-- Newsletter cta-->
+    <div class="NewsletterCTA">
+        <div class="container">
+            <div class="NewsletterCTA__col">
+                <h2 class="NewsletterCTA__heading">Subscribe To News Updates</h2>
+                <p class="NewsletterCTA__desc">Get the latest on addiction and recovery.</p>
+            </div>
+            <div class="NewsletterCTA__col">
+                <form class="NewsletterForm Form Form--horizontal" action="" method="">
+                    <input class="Form__input pac-target-input" name="EMAIL" placeholder="Email address" required="">
+                    <button class="Form__submit btn btn-blue-dark" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Newsletter cta-->
+    <!-- Footer-->
+    <footer class="Footer">
+        <div class="Container Container--lvl0">
+        </div>
+        <div class="Footer__bottom">
+            <div class="Container">
+                <p class="Footer__copyright">
+                    <span class="Footer__copyright-primary">
+                        Copyright © 2020 Addictionhelplineamerica.com
+                    </span>
+                    <span class="Footer__copyright-secondary">
+                        For immediate treatment help call:<br class="md-hide lg-hide">
+                        <a class="phone-number white" href="tel:8443778070">(844) 377-8070</a>
+                    </span>
+                </p>
+                <p class="Footer__social-media">
+                    <span class="Footer__social-media__icon">
+                        <a href="https://www.facebook.com/addictionhelplineamerica/" title="Facebook" target="_blank">
+                            <span class="fa fa-facebook"></span>
+                        </a>
+                    </span>
+                    <span class="Footer__social-media__icon">
+                        <a href="https://twitter.com/helplineamerica" title="Twitter" target="_blank">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </span>
+                    <span class="Footer__social-media__icon">
+                        <a href="https://www.instagram.com/addictionhelplineamerica/" title="Instagram" target="_blank">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+                    </span>
+                </p>
+                <ul class="Footer__menu-secondary">
+                    <li class="menu-item menu-about-us">
+                        <a href="https://addictionhelplineamerica.com/about/">About Us</a>
+                    </li>
+                    <li class="menu-item menu-contact-us">
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li class="menu-item menu-privacy-policy">
+                        <a href="https://addictionhelplineamerica.com/privacy/">Privacy Policy</a>
+                    </li>
+                    <li class="menu-item menu-terms-of-use">
+                        <a href="https://addictionhelplineamerica.com/termsofuse/">Terms of Use</a>
+                    </li>
+                </ul>
+                <ul class="Footer__button-menu">
+                    <li>
+                        <a class="btn btn-tiny btn-blue-dark" tabindex="0">
+                            <svg class="Icon Icon--phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 28.2">
+                                <path d="M17.8,0H1.2C0.5,0,0,0.5,0,1.2l0,0V27c0,0.7,0.5,1.2,1.2,1.2h16.6c0.7,
+                  0,1.2-0.5,1.2-1.2v0V1.2C19,0.5,18.5,0,17.8,0C17.8,0,17.8,0,17.8,
+                  0z
+                  M9.5,26.6c-1.1,0-2-0.9-2-2s0.9-2,2-2c1.1,0,2,0.9,2,2C11.5,25.7,10.6,
+                  26.6,9.5,26.6L9.5,26.6L9.5,26.6z
+                  M15.9,20.5c0,0.5-0.4,0.9-0.9,0.9l0,
+                  0H4c-0.5,0-0.9-0.4-0.9-0.9c0,0,0,0,0,0V4.1c0-0.5,0.4-0.9,0.9-0.9l0,
+                  0h11c0.5,0,0.9,0.4,0.9,0.9c0,0,0,0,0,0V20.5z"></path>
+                            </svg> Where do calls go?
+                        </a>
+                    </li>
+                </ul>
+                <p class="Footer__disclaimer">
+                    This website is designed for educational purposes only and does not provide medical advice. The
+                    information on this website should not be used to diagnose or treat a health problem or disease.
+                    This website is not a substitute for professional medical
+                    care from a licensed physician. If you have, or suspect you may have, a health problem you should
+                    consult your health care provider. The publishers, authors, editors, and contributors of this
+                    website shall have no liability, obligation, or responsibility
+                    to any person or entity for any losses, damages, or adverse consequences alleged to have happened
+                    directly or indirectly as a result of material on this website, or interaction with a treatment
+                    center listed in our directory. If you or someone
+                    you know is experiencing a medical emergency, call 911 immediately.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <div class="MobileFlyout">
+        <div class="MobileFlyout__cta">
+            <p class="MobileFlyout__copy">Get Help Now. Call Addiction Helpline America Today</p>
+            <p class="MobileFlyout__number">
+                <a class="btn btn-primary  phone-number " href="tel:8443778070"
+                    data-invoca-campaign-id="ACMainBundle">(844)
+                    377-8070</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find A Drug Rehab Center - Addiction Helpline America</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Yantramanav:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/alabama.css">
+    <script src="https://use.fontawesome.com/06c5fd5dae.js"></script>
+    <link rel="stylesheet" href="./fonts/fontawesome-webfont.woff">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places"></script>
+    <script>
+        function initialize() {
+            var input = document.getElementById('searchquery');
+            var options = {
+                types: ['(cities)'],
+                componentRestrictions: {
+                    country: "us"
+                }
+            }
+
+            var autocomplete = new google.maps.places.Autocomplete(input, options)
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                var place = autocomplete.getPlace()
+            });
+
+            var treatment = document.getElementById('treatment_location');
+            var autocomplete1 = new google.maps.places.Autocomplete(treatment, options);
+            google.maps.event.addListener(autocomplete1, 'place_changed', function () {
+                var place = autocomplete1.getPlace();
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <!-- top bar -->
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="#" class="logo-text">
+                        <img src="./images/logo.png" alt="">
+                        <!-- <span class="logo-text-primary">Addiction</span>
+                <span class="logo-text-secondary">Center</span> -->
+                    </a>
+                </div>
+                <div class="header-cta">
+                    <div class="header-cta-text-box">
+                        <span class="header-cta-text">
+                            Get Help Now. Call Addiction Helpline America Today
+                        </span>
+                        <a class="header-cta-disclosure" href="#" tabindex="0">
+                            <span class="fa fa-info-circle"></span> Calls will be forwarded to these treatment providers
+                        </a>
+                    </div>
+                    <a class="header-cta-phone-number" href="tel:(844)377-8070">
+                        <svg class="header-cta-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512">
+                            <g>
+                                <path
+                                    d="M272,0H48C21.5,0,0,21.5,0,48v416c0,26.5,21.5,48,48,48l0,0h224c26.5,0,48-21.5,48-48l0,0V48C320,21.5,298.5,0,272,0z
+                  M160,480c-17.7,0-32-14.3-32-32s14.3-32,32-32s32,14.3,32,32S177.7,480,160,480z
+                  M272,372c0,6.6-5.4,12-12,12H60c-6.6,0-12-5.4-12-12V60c0-6.6,5.4-12,12-12h200c6.6,0,12,5.4,12,12V372z">
+                                </path>
+                                <path
+                                    d="M272,372c0,6.6-5.4,12-12,12H60c-6.6,0-12-5.4-12-12V60c0-6.6,5.4-12,12-12h200c6.6,0,12,5.4,12,12V372z"
+                                    opacity="0.4"></path>
+                            </g>
+                        </svg> (844) 377-8070
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End topbar -->
+        <!-- Navigataion -->
+        <nav class="navigation">
+            <ul class="navigation-menu">
+                <li class="navigation-item">
+                    <a href="" class="navigation-item-link">
+                        <svg class="icon-menu-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <title>Rehab Icon</title>
+                            <path
+                                d="M554.1,161.2L416,224v288l139.9-56c12.2-4.9,20.1-16.6,20.1-29.7V176c0-8.8-7.2-16-16-16C558,160,555.9,160.4,554.1,161.2z
+                  M20.1,216C8,220.9,0,232.6,0,245.7V496c0,8.8,7.2,16,16,16c2,0,4.1-0.4,5.9-1.1L160,448V214.9c-8.4-14.8-15.5-30.4-21.2-46.4L20.1,216z
+                  M288,359.7c-14.1,0-27.4-6.2-36.5-17c-19.7-23.2-40.6-49.6-59.5-76.7v182l192,64V266c-18.9,27.1-39.8,53.5-59.5,76.7C315.4,353.5,302.1,359.7,288,359.7z"
+                                style="opacity: 0.4;"></path>
+                            <path
+                                d="M288,0c-69.6,0-126,56.4-126,126c0,56.3,82.4,158.8,113.9,196c5.6,6.7,15.5,7.6,22.2,2c0.7-0.6,1.4-1.3,2-2C331.7,284.8,414,182.3,414,126C414,56.4,357.6,0,288,0z
+                  M288,168c-23.2,0-42-18.8-42-42c0-23.2,18.8-42,42-42c23.2,0,42,18.8,42,42C330,149.2,311.2,168,288,168z">
+                            </path>
+                        </svg>
+                        <span class="navigation-item-text">Find Rehab</span>
+                        <span class="navigation-item-toggle fa fa-angle-down"></span>
+                    </a>
+                    <div class="navigation__submenu">
+                        <div class="navigation__submenu-container">
+                            <div class="navigation__submenu-menu">
+                                <form class="Form Form--horizontal Form--rehab-search Form--submenu" action="/rehabs/"
+                                    method="get">
+                                    <input id="searchquery" class="Form__input pac-target-input" type="text"
+                                        name="location" placeholder="Start Typing A City..." autocomplete="off" />
+                                    <button class="btn btn-small btn-primary">
+                                        <span class="fa fa-search"></span>
+                                        <span class="btn-text">Search</span>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="navigation__subpanel">
+                                <p class="navigation__subpanel-title">Featured Center</p>
+                                <div class="Card Card--rehab-feat Card--rehab-submenu">
+                                    <picture class="Card__thumbnail">
+                                        <source
+                                            data-lazy-srcset="./img/rehabs/daylight-recovery-center-west-palm-beach-fl.png"
+                                            media="(min-width: 52em)">
+                                        <source
+                                            data-lazy-srcset="./img/rehabs/daylight-recovery-center-west-palm-beach-fl.png"
+                                            media="(min-width: 40em)">
+                                        <img class="Card__img"
+                                            src="./images/daylight-recovery-center-west-palm-beach-fl.png"
+                                            alt="Thumbnail of Recovery Unplugged &amp;#8211; Harrison House of Northern Virginia"
+                                            data-lazy-src="./img/rehabs/daylight-recovery-center-west-palm-beach-fl.png" />
+                                    </picture>
+                                    <div class="Card__content">
+                                        <p class="Card__heading">
+                                            Daylight Recovery Center
+                                        </p>
+                                        <p class="Card__meta">
+                                            <span class="fa fa-map-marker"></span>
+                                            <span>West Palm Beach, FL</span>
+                                        </p>
+                                        <p class="Card__link">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/daylight-recovery-center-west-palm-beach-fl"
+                                                target="_blank">
+                                                View Center ⟶
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </li>
+                <li class="navigation-item">
+                    <a href="" class="navigation-item-link">
+                        <svg class="icon-menu-item icon-addiction" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
+                            <title>Addiction Icon</title>
+                            <path
+                                d="M555.3,300.1l-64.9-92.8L303,338.4l65,92.8c36.2,51.7,107.5,64.3,159.2,28.1S591.5,351.8,555.3,300.1z">
+                            </path>
+                            <path
+                                d="M425.4,114.5c-36.2-51.7-107.5-64.3-159.2-28.1c-15.6,10.9-27.6,25-35.8,40.8c9.2,4.9,17.7,10.5,25.3,17.2c22,19.5,32.7,45.5,32.7,79.4v93.6l14.7,20.9l187.4-131.1L425.4,114.5z"
+                                opacity="0.4"></path>
+                            <path d="M192.6,412.6l-128,0.4l-0.6-152.8h128.2L192.6,412.6z" opacity="0.4"></path>
+                            <path d="M158.1,0H98.1c-8.9,0-15.9,7.9-15.9,16.6L80,138.2c-46.9,19-80,31.8-80,85.6v224.1C0,483.2,28.6,512,64.1,512h128.2c35.3,0,64.1-28.6,64.1-64.1V223.8c0-53.8-33.1-66.6-80-85.6l-2.2-121.6C174,7.9,167,0,158.1,0L158.1,0z
+                M192.1,413h-128V260.3h128.2V413H192.1z">
+                            </path>
+                        </svg>
+                        <span class="navigation-item-text">Addictions</span>
+                        <span class="navigation-item-toggle fa fa-angle-down"></span>
+                    </a>
+                    <div class="navigation__submenu navigation__submenu--no-panel">
+                        <div class="navigation__submenu-container">
+                            <div class="navigation__submenu-menu second">
+                                <ul class="navigation__submenu-list navigation__submenu-list--two-col">
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-652843">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/alcohol/"
+                                            class="menulink">
+                                            Alcohol <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-behaviors">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/benzodiazepines/"
+                                            class="menulink">
+                                            Benzodiazepines <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-antidepressants-2">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/cocaine/"
+                                            class="menulink">
+                                            Cocaine <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-benzodiazepines">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/heroin/"
+                                            class="menulink">
+                                            Heroin <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-652852">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/meth/"
+                                            class="menulink">
+                                            Meth <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-inhalants">
+                                        <a href="https://addictionhelplineamerica.com/resources/recovery-guide/opioids/"
+                                            class="menulink">
+                                            Opioids <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navigation-item">
+                    <a href="" class="navigation-item-link">
+                        <svg class="icon-menu-item icon-treatment" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <title>Treatment Icon</title>
+                            <path fill="currentColor" d="M335 63h-80a64 64 0 0 1 64 64H63a64 64 0
+                0 1 64-64H47a48 48 0 0 0-48 48v352a48 48 0 0
+                0 48 48h288a48 48 0 0 0 48-48V111a48 48 0 0
+                0-48-48zm-47 281a8 8 0 0 1-8 8h-56v56a8 8 0
+                0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0
+                1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1
+                8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8z" opacity="0.4"></path>
+                            <path fill="currentColor" d="M255 63a64 64 0 0 0-128 0 64 64 0 0 0-64
+                64h256a64 64 0 0 0-64-64zm-64 24a24 24 0 1 1
+                24-24 23.94 23.94 0 0 1-24 24zm89
+                201h-56v-56a8 8 0 0 0-8-8h-48a8 8 0 0 0-8
+                8v56h-56a8 8 0 0 0-8 8v48a8 8 0 0 0 8
+                8h56v56a8 8 0 0 0 8 8h48a8 8 0 0 0
+                8-8v-56h56a8 8 0 0 0 8-8v-48a8 8 0 0
+                0-8-8z">
+                            </path>
+                        </svg>
+                        <span class="navigation-item-text">Levels of Care</span>
+                        <span class="navigation-item-toggle fa fa-angle-down"></span>
+                    </a>
+                    <div class="navigation__submenu">
+                        <div class="navigation__submenu-container">
+                            <div class="navigation__submenu-menu">
+                                <ul class="navigation__submenu-list">
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-types-of-treatment">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/detoxification/"
+                                            class="menulink">
+                                            Detoxification
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-paying-for-rehab">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/residential-treatment/"
+                                            class="menulink">
+                                            Residential Treatment
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-treatment-medications">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/inpatient-treatment/"
+                                            class="menulink">
+                                            Inpatient Treatment
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-652883">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/partial-hospitalization-php/"
+                                            class="menulink">
+                                            Partial Hospitalization Program (PHP)
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-653694">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/outpatient-treatment/"
+                                            class="menulink">
+                                            Outpatient Program
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__submenu-list-item" id="nav-subitem-652885">
+                                        <a href="https://addictionhelplineamerica.com/resources/levels-of-care/medication-assisted-treatment/"
+                                            class="menulink">
+                                            Medication Assisted Treatment (MAT)
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navigation__subpanel">
+                                <p class="navigation__subpanel-title">Understanding Addiction</p>
+                                <ul class="QuestionsList col-12">
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/what-is-addiction/">
+                                            <span class="QuestionsList__link-text">What Is Addiction?</span>
+                                        </a>
+                                    </li>
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/signs-of-addiction/">
+                                            <span class="QuestionsList__link-text">Signs Of Addiction</span>
+                                        </a>
+                                    </li>
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/confronting-addiction/">
+                                            <span class="QuestionsList__link-text">Confronting Addiction?</span>
+                                        </a>
+                                    </li>
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/disease-of-addiction/">
+                                            <span class="QuestionsList__link-text">Disease Of Addiction?</span>
+                                        </a>
+                                    </li>
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/staging-an-intervention/">
+                                            <span class="QuestionsList__link-text">Staging An Intervention?</span>
+                                        </a>
+                                    </li>
+                                    <li class="QuestionsList__item">
+                                        <a class="QuestionsList__link"
+                                            href="https://addictionhelplineamerica.com/resources/understanding-addiction/withdrawal-timelines/">
+                                            <span class="QuestionsList__link-text">Withdrawal Timelines?</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navigation-item">
+                    <a href="" class="navigation-item-link">
+                        <svg class="icon-menu-item icon-news" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <title>News Icon</title>
+                            <path d="M256,192c-53,0-96-43-96-96s43-96,96-96s96,43,96,96S309,192,256,192z">
+                            </path>
+                            <path
+                                d="M233.6,241.1c-59.3-36.3-155.4-46.3-203.8-49c-16.3-1-29.8,11.4-29.8,27v222.8c0,14.3,11.6,26.3,26.5,27.1c43.7,2.3,132,10.7,193,41.4c9.4,4.7,20.5-1.7,20.5-11.9v-246C240,247.9,237.6,243.5,233.6,241.1L233.6,241.1z">
+                            </path>
+                            <path
+                                d="M482.2,192.1c-48.4,2.7-144.5,12.7-203.8,49c-4,2.5-6.5,6.9-6.4,11.6v245.8c0,10.2,11.1,16.6,20.5,11.9c61-30.7,149.3-39.1,193-41.4c14.9-0.8,26.5-12.7,26.5-27V219.1C512,203.5,498.5,191.1,482.2,192.1L482.2,192.1z"
+                                style="opacity:0.4">
+                            </path>
+                        </svg>
+                        <span class="navigation-item-text">Videos &amp; Blog</span>
+                        <span class="navigation-item-toggle fa fa-angle-down"></span>
+                    </a>
+                </li>
+                <li class="navigation-item" id="nav-item-search">
+                    <a href="" class="navigation-item-link">
+                        <svg class="icon-menu-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <title>Search Icon</title>
+                            <path d="M208 80a128 128 0 1 1-90.51 37.49A127.15
+                127.15 0 0 1 208 80m0-80C93.12 0 0 93.12 0
+                208s93.12 208 208 208 208-93.12
+                208-208S322.88 0 208 0z" style="opacity:0.4"></path>
+                            <path d="M504.9 476.7L476.6 505a23.9 23.9 0 0
+                1-33.9 0L343 405.3a24 24 0 0
+                1-7-17V372l36-36h16.3a24 24 0 0 1 17 7l99.7
+                99.7a24.11 24.11 0 0 1-.1 34z">
+                            </path>
+                        </svg>
+                        <span class="navigation-item-text">Search</span>
+                        <span class="navigation-item-toggle fa fa-angle-down"></span>
+                    </a>
+                    <div class="navigation__submenu navigation__submenu--no-panel">
+                        <div class="navigation__submenu-container">
+                            <div class="navigation__subpanel" style="border:none;padding:0;display:block;width:100%;">
+                                <form class="Form Form--horizontal Form--search Form--subpanel" action="/" method="get"
+                                    role="search">
+                                    <input class="Form__input" type="search" name="s"
+                                        placeholder="Search By A Facility's Name">
+                                    <button class="btn btn-small btn-primary" type="submit">
+                                        <span class="fa fa-search"></span>
+                                        <span class="btn-text">Search</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- Main -->
+    <!-- Newsletter start -->
+    <div id="content">
+        <main class="main-content">
+            <div class="PageHero PageHero--state-page">
+                <div class="PageHero__bg">
+                    <img class="PageHero__img lazyloaded" src="./images/alabama.jpg" alt="" data-ll-status="loaded">
+                </div>
+                <div class="flex flex-wrap Container">
+                    <div class="PageHero__content">
+                        <h1>Drug & Alcohol Rehab Centers In Alabama</h1>
+                        <p>Among individuals in Alabama enrolled in substance use treatment in 2015, 59.3% were in
+                            treatment for a
+                            drug problem only, 7.0% were in treatment for an alcohol problem only, and 33.8% were in
+                            treatment for
+                            both drug and alcohol disorders.</p>
+                    </div>
+
+                    <div class="CityDropdownCTA">
+                        <p class="CityDropdownCTA__label">To Find A Rehab Center Choose A City Below</p>
+                        <div class="CityDropdownCTA__dropdown Dropdown">
+                            <button class="Dropdown__button btn btn-small btn-white" onclick="myFunction()"
+                                data-toggle="CityDropdownMenu" aria-controls="CityDropdownMenu" data-is-focus="false"
+                                data-yeti-box="CityDropdownMenu" aria-haspopup="true" aria-expanded="false"
+                                id="5dwjjk-dd-anchor">
+                                Select A City <span class="fa fa-angle-down"></span>
+                            </button>
+                            <script>
+                                function myFunction() {
+                                    document.getElementById("myDropdown").classList.toggle("is-open");
+                                }</script>
+                            <div class="Dropdown__menu dropdown-pane has-position-bottom has-alignment-left"
+                                id="myDropdown" id="CityDropdownMenu" data-dropdown="u9ngxy-dropdown"
+                                data-auto-focus="true" aria-labelledby="5dwjjk-dd-anchor" aria-hidden="true"
+                                data-yeti-box="CityDropdownMenu" data-resize="CityDropdownMenu" data-events="resize"
+                                style="top: 38px; left: 0px;">
+                                <ul class="clearfix Dropdown__list">
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/abbeville">Abbeville</a>
+
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/alabaster">Alabaster</a>
+
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/alexander+city">Alexander
+                                            City</a>
+
+                                    </li>
+
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/andalusia">Andalusia</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/anniston">Anniston</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/ardmore">Ardmore</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/ashford">Ashford</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/ashville">Ashville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/athens">Athens</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/atmore">Atmore</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/attalla">Attalla</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/autaugaville">Autaugaville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/bay+minette">Bay
+                                            Minette</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/bayou+la+batre">Bayou
+                                            La Batre</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/bessemer">Bessemer</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/birmingham+">Birmingham</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/boaz">Boaz</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/brent">Brent</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/brewton">Brewton</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/butler">Butler</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/butler">Calera</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/camden">Camden</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/carrollton">Carrollton</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/centre">Centre</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/chatom">Chatom</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/childersburg">Childersburg</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/clanton">Clanton</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/columbiana">Columbiana</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/cullman">Cullman</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/daphne">Daphne</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/decatur">Decatur</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/demopolis">Demopolis</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/dothan">Dothan</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/dutton">Dutton</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/eight+mile">Eight
+                                            Mile</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/enterprise">Enterprise</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/eufaula">Eufaula</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/eutaw">Eutaw</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/fairhope">Fairhope</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/florence">Florence</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/foley">Foley</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/fort+payne">Fort
+                                            Payne</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/fort+rucker">Fort
+                                            Rucker</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/gadsden">Gadsden</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/geneva">Geneva</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/grand+bay">Grand
+                                            Bay</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/greensboro">Greensboro</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/greenville">Greenville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/grove+hill">Grove
+                                            Hill</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/guntersville">Guntersville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/haleyville">Haleyville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/hamilton">Hamilton</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/hayden">Hayden</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/hayneville">Hayneville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/huntsville">Huntsville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/jasper">Jasper</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/lineville">Lineville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/livingston">Livingston</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/madison">Madison</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/marion">Marion</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/meridianville">Meridianville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/mobile">Mobile</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/monroeville">Monroeville</a>
+                                    </li>
+
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/montgomery">Montgomery</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/moulton">Moulton</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/newton">Newton</a>
+
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/northport">Northport</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/oneonta">Oneonta</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/opelika">Opelika</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/opp">Opp</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/oxford">Oxford</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/ozark">Ozark</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/pelham">Pelham</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/pell+city">Pell
+                                            City</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/phenix+city">Phenix
+                                            City</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/prattville">Prattville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/roanoke">Roanoke</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/rogersville">Rogersville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/russellville">Russellville</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/samson">Samson</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/scottsboro">Scottsboro</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/selma">Selma</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/sheffield">Sheffield</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/spanish+fort">Spanish
+                                            Fort</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/stevenson">Stevenson</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/sylacauga">Sylacauga</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/talladega">Talladega</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/thorsby">Thorsby</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/troy">Troy</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/tuscaloosa">Tuscaloosa</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/tuscumbia">Tuscumbia</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/tuskegee">Tuskegee</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/union+springs">Union
+                                            Springs</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/valhermoso+springs">Valhermoso
+                                            Springs</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/vernon">Vernon</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/warrior">Warrior</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/webb">Webb</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/wetumpka">Wetumpka</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/winfield">Winfield</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/results/alabama/woodville">Woodville</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Section map -->
+
+    <!-- Featured section-->
+    <section class="home-section section-featured">
+        <div class="container">
+
+            <section class="home-section section-rehabs-search">
+                <div class="Card--sponsored-home">
+                    <span class="header-cta-disclosure"> Sponsored Rehabs </span><br>
+                </div>
+                <!-- Cards -->
+                <div class="container-fluid p-0 pt-md-3 center fadeIn animated" data-animate="fadeIn">
+                    <div class="container">
+                        <div class="row h-100 justify-content-center mt-3 mb-3">
+                            <div class="col-12 col-sm-6 col-md-3 mb-5">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top" src="./images/wellbridge6-calverton-ny.jpg"
+                                            alt="Photo of Wellbridge in Calverton , NY" />
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem !important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/wellbridge-calverton-ny"
+                                                title="Learn About Wellbridge" class="stretched-link"
+                                                target="_blank">Wellbridge</a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300;border: 1px #ddd solid;">
+                                                +2 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(855)750-0554</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            Calverton , NY
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top"
+                                            src="./images/miramar-recovery-center-costa-mesa-ca.jpg"
+                                            alt="Photo of Miramar Recovery Center in Costa Mesa, CA" />
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem!important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/miramar-recovery-center-costa-mesa-ca"
+                                                title="Learn About Miramar Recovery Center" class="stretched-link"
+                                                target="_blank">
+                                                Miramar Recovery Center
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +3 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(844) 407-0844</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            Costa Mesa, CA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top"
+                                            src="./images/daylight-recovery-center-west-palm-beach-fl.png"
+                                            alt="Photo of Daylight Recovery Center in West Palm Beach, FL" />
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem!important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/daylight-recovery-center-west-palm-beach-fl"
+                                                title="Learn About Daylight Recovery Center" class="stretched-link"
+                                                target="_blank">
+                                                Daylight Recovery Center
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +2 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(844) 467-1233</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            West Palm Beach, FL
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top" src="./images/legacy-healing-center-photo.jpg"
+                                            alt="Photo of Legacy Healing Center in Margate, FL">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem !important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/legacy-healing-center-pompano-beach-fl"
+                                                title="Learn About Legacy Healing Center" class="stretched-link"
+                                                target="_blank">
+                                                Legacy Healing Center
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +5 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(844) 517-0030</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            Margate, FL
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- View ALL -->
+                            <div class="col-12 col-sm-6 col-md-3 mb-5 view-more" style="display: none;">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top"
+                                            src="./images/annie-s-house-a-steps-recovery-center-facility-draper-ut.jpg"
+                                            alt="Photo of Annie's House - A Steps Recovery Center Facility in Draper, UT">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem !important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/annie-s-house-a-steps-recovery-center-facility-draper-ut"
+                                                title="Learn About Annie's House - A Steps Recovery Center Facility"
+                                                class="stretched-link" target="_blank">Annie's
+                                                House - A Steps Recovery Center Facility
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +6 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(844) 294-8974</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem;font-weight: 600;">
+                                            Draper, UT
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5 view-more" style="display: none;">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top" src="./images/rancho-milagro-recovery-temecula-ca.jpg"
+                                            alt="Photo of Rancho Milagro Recovery in Temecula, CA">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem !important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/rancho-milagro-recovery-temecula-ca"
+                                                title="Learn About Rancho Milagro Recovery" class="stretched-link"
+                                                target="_blank">
+                                                Rancho Milagro Recovery
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +3 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(844) 418-0027</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            Temecula, CA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5 view-more" style="display: none;">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top" src="./images/steps-recovery-centers-payson-ut.jpg"
+                                            alt="Photo of Steps Recovery Centers in Payson, UT">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem!important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/steps-recovery-centers-payson-ut"
+                                                title="Learn About StepsRecovery Centers" class="stretched-link"
+                                                target="_blank">
+                                                Steps Recovery Centers
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Residential
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(855) 790-7705</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem;font-weight: 600;">
+                                            Payson, UT
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mb-5 view-more" style="display: none;">
+                                <div class="card card-bottom-bar fadeIn animated" data-animate="fadeIn"
+                                    data-delay="200">
+                                    <div class="card-img-caption ohidden">
+                                        <img class="card-img-top"
+                                            src="./images/harmony-ridge-recovery-center-walker-wv.jpg"
+                                            alt="Photo of Harmony Ridge Recovery Center in Walker, WV">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title lh100 heightfix mb-0" style="font-size: 1rem !important;">
+                                            <a href="https://addictionhelplineamerica.com/rehabs/profiles/harmony-ridge-recovery-center-walker-wv"
+                                                title="Learn About Harmony Ridge Recovery Center" class="stretched-link"
+                                                target="_blank">
+                                                Harmony Ridge Recovery Center
+                                            </a>
+                                        </h3>
+                                        <p class="card-text mb-2">
+                                            <span class="badge p-1 m-1 bgcolor text-white" style="font-weight: 300;">
+                                                <span class="far fa-check-circle text-white"></span> Verified
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                Detox
+                                            </span>
+                                            <span class="badge badge-light p-1"
+                                                style="font-weight: 300; border: 1px #ddd solid;">
+                                                +4 More
+                                            </span>
+                                        </p>
+                                        <p class="card-text nomargin">
+                                            <strong>(833) 768-0151</strong>
+                                        </p>
+                                        <p class="card-text nomargin" style="font-size: 0.7rem; font-weight: 600;">
+                                            Walker, WV
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="center mb3">
+                            <button class="btn btn-primary" onclick="viewall_cards(this);">View All</button>
+                        </p>
+                        <script>
+                            function viewall_cards(item) {
+                                var text = item.textContent;
+                                var views = document.querySelectorAll(".view-more");
+                                if (text == "View All") {
+                                    views.forEach((view) => {
+                                        console.log(view);
+                                        view.style.display = "block";
+                                    });
+                                    item.textContent = "View Less";
+                                } else {
+                                    views.forEach((view) => {
+                                        view.style.display = "none";
+                                    });
+                                    item.textContent = "View All";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <!-- Cards end-->
+            </section>
+        </div>
+    </section>
+    <!-- End featured section -->
+
+    <!-- Page main body content part starts here -->
+    <section class="PageSection PageSection--normal PageSection--none PageSection--has-nav" id="mainContent">
+        <div class="Container">
+            <nav class="PageNav">
+                <div class="PageNav__container">
+                    <a class="SidebarCTA SidebarCTA--normal" href="#" id="PageSidebarLPCTA">
+                        <h5 class="SidebarCTA__heading">Get started on the road to recovery.</h5>
+                        <div class="SidebarCTA__content">
+                            <p><span class="btn btn-small btn-link">Find Out How ⟶</span></p>
+                        </div>
+                    </a>
+                    <div class="SidebarCTA SidebarCTA--with-content" id="PageSidebarTreatmentCTA">
+                        <h5 class="SidebarCTA__heading">Questions about treatment?</h5>
+                        <div class="SidebarCTA__content">
+                            <p>Get confidential help 24/7. Call now for:</p>
+                            <ul>
+                                <li>Access to top treatment centers</li>
+                                <li>Caring, supportive guidance</li>
+                                <li>Financial assistance options</li>
+                            </ul>
+                            <a class="phone-number btn btn-primary block mt2" href="tel:8443778070"
+                                data-invoca-campaign-id="">
+                                <span class="fa fa-phone"></span> (844) 377-8070
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="SidebarCTA SidebarCTA--with-content" id="PageSidebarQuestionsCTA">
+                        <h5 class="SidebarCTA__heading">Frequently Asked Questions</h5>
+                        <div class="SidebarCTA__content">
+                            <ul class="QuestionsList">
+                                <li><a href="#">Is Addiction A Disease Or A Choice?</a></li>
+                                <li><a href="#">How Do I Choose A Drug Rehabilitation Center?</a></li>
+                                <li><a href="#">Which Is Better Inpatient Or Outpatient Treatment?</a></li>
+                                <li><a href="#">When Is It Appropriate For Someone To Seek Treatment?</a></li>
+                                <li><a href="#">Does Insurance Cover Treatment?</a></li>
+                                <li><a href="#">Where And How Can I Find Addiction Treatment?</a></li>
+                                <li><a href="#">How Can I Prepare An Intervention?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="SidebarCTA SidebarCTA--normal" href="#" id="PageSidebarCovid19CTA">
+                        <h5 class="SidebarCTA__heading">Find A Rehab Near you!</h5>
+                        <div class="SidebarCTA__content">
+                            <p><span class="btn btn-small btn-link">Get Help Today! ⟶</span></p>
+                        </div>
+                    </a>
+                    <a class="SidebarCTA SidebarCTA--normal" href="#" id="LocalPageSidebarAddCTA">
+                        <h5 class="SidebarCTA__heading">Looking to feature or list your rehab on our site? Simply fill
+                            out
+                            the
+                            form and one of our marketing specialits will get back to you shortly.</h5>
+                        <picture class="SidebarCTA__bg">
+                            <img class="SidebarCTA__bg__img lazyloaded" src="./images/add_center_cta_bg.jpg" alt=""
+                                data-ll-status="loaded">
+
+                        </picture>
+                        <div class="SidebarCTA__content">
+                            <p><span class="btn btn-small btn-link">Submit your center ⟶</span></p>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+            <div class="EditorContent">
+                <h2>Alabama Addiction Treatment</h2>
+                <p>In Alabama, alcohol dependency and abuse are among one of the most considerable problems the state
+                    faces. This state experiences the 17th highest rate of alcohol-related deaths in the country.
+                    Alcohol
+                    use was most prevalent in young people ages 18-25. Other drugs, such as marijuana, opiates, cocaine,
+                    methamphetamine, and prescription drugs, are also commonly abused. In 2015 there were more opiate
+                    prescriptions written than residents of Alabama. For the state’s 4.85 million people, more than 5.84
+                    million prescriptions were written. That averages out to 1.2 prescriptions per man, woman, and child
+                    in
+                    Alabama in 2015.</p>
+                <p>In 2018, according to <a href="https://www.drugabuse.gov/">drugabuse.gov</a>, Alabama physicians
+                    wrote
+                    a total of 97.5 opioid prescriptions per 100 residents, which is an improvement but this still makes
+                    Alabama have the highest prescribing rate in the country, almost doubling the average U.S. rate of
+                    51.4
+                </p>
+                <p>Although Alabama experiences exceptionally high alcohol and prescription drug abuse rates, many
+                    residents receive the help they need through the state’s alcohol and drug rehabilitation programs.
+                    If
+                    you or your loved one is ready to begin recovery, contact a treatment provider now.</p>
+                <h2>Alabama Drug Statistics</h2>
+                Leading the state in arrests for sale and possession of illegal drugs was <a
+                    href="https://www.alea.gov/">Marshall County</a> with 170 sales arrests and 239 possession arrests.
+                8,457 people arrested for alcohol violations in 2016 in Alabama. 10,438 persons arrested in Alabama for
+                drug violations; 16 percent were for sale of drugs, and 84 percent were for possession. 775 reported
+                drug
+                overdose deaths in 2018 Law enforcement agencies across Alabama “depicted methamphetamine as their
+                greatest drug threat for 2017”.<p></p>
+                <div class="highlight EditorContent">
+                    <p>In Alabama, there were 2,481 treatment admissions for amphetamines.</p>
+                </div>
+
+                <div class="ColumnWrap ColumnWrap--triple  EditorContent">
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title">18,457</p>
+                                <p class="Stat__subtitle">people</p>
+                                <div class="Stat__body">
+                                    <p>
+                                        In 2016, 18,457 people were arrested for alcohol violations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title">2,481</p>
+                                <p class="Stat__subtitle">people</p>
+                                <div class="Stat__body">
+                                    <p>
+                                        2,481 people were admitted for treatment of amphetamines addiction in Alabama.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title">775</p>
+                                <p class="Stat__subtitle">deaths</p>
+                                <div class="Stat__body">
+                                    <p>
+                                        775 reported drug overdose deaths in 2018.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Binge and Underage Drinking in Alabama</h3>
+                <p>Underage and binge drinking is a severe concern in Alabama and the rest of the United States.
+                    Approximately 90 percent of the alcohol consumed by underage drinkers in the U.S. is in the form of
+                    binge drinking. Binge drinking is a drinking pattern that brings a person’s blood alcohol
+                    concentration
+                    (B.A.C.) to 0.08 or above. A B.A.C. of 0.08 commonly occurs if a man has five alcoholic drinks and a
+                    woman has four alcoholic beverages within two hours.</p>
+                <p>Young people, being unaware of the consequences of heavy alcohol consumption, puts them at an even
+                    greater risk for potential adverse effects. Binge drinking affects a person’s judgment and can lead
+                    to
+                    poor decision-making like unprotected sex and driving while intoxicated. This behavior also
+                    increases a
+                    person’s risk of physical injury or alcohol poisoning while drunk.</p>
+                <div class="InContentCTA InContentCTA--normal">
+                    <h3 style="margin: 0 auto;padding-bottom: 8px;">Start Your Road To Recovery Today!</h3>
+                    <p style="margin: 8px 0 0; width: 100%; color: rgba(0,0,0,.5);">We’re Available 24/7</p>
+                    <div class="InContentCTA__callback" style="padding: 16px 0 0; width: 100%;">
+                        <a class="btn btn-primary" href="#">Find Help Now</a>
+                    </div>
+                </div>
+                <h3>Alabama’s Alcohol Laws</h3>
+                <p>In 2013 the Alabama Alcoholic Beverage Control Board created an “Under Age, Under Arrest” campaign.
+                    This statewide initiative targets underage drinking and reminds teens and underage adults that they
+                    will
+                    be fined and sent to jail if they are underage drinking. Alabama has Enhanced penalties for D.U.I.
+                    Child
+                    Endangerment Laws and Enhanced Penalties for High-B.A.C (.15+). In Alabama, 70.6% of driving
+                    fatalities
+                    involve high B.A.C. drivers (.15+), which is higher than the national average.</p>
+                <h3>Laws of Alabama Drug Use</h3>
+                <p>Alabama’s drug laws are strict compared to many other states. These penalties can have a significant
+                    impact on people’s lives. Some consequences include not obtaining specific jobs, difficulty
+                    receiving
+                    scholarships, being turned away from the armed forces, and denying other privileges. Consequences
+                    for
+                    Illegal Drug and Underage Alcohol Possession in Alabama</p>
+                <p>Alabama has some of the harshest penalties for drug violations in the United States. According to <a
+                        href="https://www.jrsa.org/">jrsa.org</a>, in Alabama, there were 18,457 people arrested for
+                    alcohol
+                    violations in 2016, and 10,438 persons were arrested for drug violations. </p>
+
+                <h4>Alcohol</h4>
+                <p>
+                    It is illegal for anyone under 21 years of age in Alabama to consume, possess, purchase, or
+                    transport
+                    alcohol. The penalty for a minor-in-possession conviction in Alabama is a minimum fine of $25 or a
+                    maximum fine of $100. Additionally, a person can receive up to 30 days in jail or a juvenile
+                    detention
+                    center.
+                </p>
+                <h4>Marijuana</h4>
+                <p>Cannabis is a Schedule I controlled substance in Alabama. Recreational marijuana is entirely illegal,
+                    and medical cannabis is only legal in low-THC, high-CBD variants. At one time, cannabidiol was
+                    allowed
+                    for a research program, but this law expired in 2019.</p>
+                <p>In Alabama, possessing marijuana for personal use is a Class A misdemeanor. Penalties for a Class A
+                    misdemeanor in Alabama is up to one-year imprisonment and a maximum fine of $6,000. After a person’s
+                    second possession charge, the penalty increases to a class D felony where a person faces up to five
+                    years in prison and a fine up to $7500. Possession of marijuana resulted in 2,351 arrests or 23
+                    percent
+                    of all drug arrests.</p>
+                <p>According to the 2018 Code of Alabama, anyone who “knowingly sells, manufactures, delivers, or brings
+                    into this state,” 1,000 pounds of marijuana faces a mandatory sentence of life in prison without
+                    parole.
+                </p>
+                <h3>Cocaine, Heroin, Meth, and Other Illicit Drugs</h3>
+                <p>In Alabama, cocaine, methamphetamine, heroin, and other opioids are almost all controlled substances.
+                    Anyone who possesses any controlled substance is guilty of a Class D felony. Sales is a class B
+                    felony
+                    and trafficking a class A felony. State law says that anyone who traffics in heroin, cocaine, meth,
+                    synthetic drugs, or P.C.P. can face a mandatory life prison sentence without the possibility of
+                    parole.
+                    In Alabama, 10,438 people were arrested for drug sales and possession in 2016.</p>
+                <h3>Addiction Treatment in Alabama</h3>
+                <p>Among individuals in Alabama enrolled in substance use treatment in 2015, 59.3% were in treatment for
+                    a
+                    drug problem only, 7.0% were in treatment for an alcohol problem only, and <a
+                        href="https://www.samhsa.gov/data/sites/default/files/Alabama_BHBarometer_Volume_4.pdf">33.8%</a>
+                    were
+                    in treatment for both drug and alcohol disorders. The Alabama Department of Mental Health (ADMH) is
+                    responsible for regulating Alabama’s public substance abuse services. ADMH contracts with
+                    community-based programs. These services include outpatient and residential services.
+                    State-contracted
+                    providers offer services on a sliding scale based on income. This sliding scale model results in low
+                    or
+                    no-cost services to persons with low income.</p>
+                <h3>Alabama Methadone and Buprenorphine Maintenance Treatment</h3>
+                <p>Alabama’s Methadone Maintenance and Buprenorphine programs help those who struggle with opiate
+                    addiction by offering medication that allows them to receive treatment on an outpatient basis.
+                    Methadone
+                    and buprenorphine both work by reducing withdrawal side effects that occur when a person
+                    discontinues
+                    opiates. These medications both also decrease cravings for opiates. Both drugs work best as part of
+                    a
+                    long term treatment plan, including a therapeutic component. Alabama operates 24 outpatient narcotic
+                    treatment centers that offer medication-assisted treatment with methadone or buprenorphine.</p>
+                <h3>Alabama Drug Courts</h3>
+                <p>Alabama offers a drug court program for some drug offenders as well as those arrested for alcohol
+                    violations. Drug courts give nonviolent offenders with drug addictions a chance for recovery instead
+                    of
+                    jail time. Participants receive treatment, counseling, and any other services they need. The goal is
+                    to
+                    provide necessary treatment that prevents offenders from committing future crimes. Alabama offers
+                    drug
+                    court programs in over 30 counties.
+                </p>
+                <h3>Prescription and Illicit Drug Monitoring in Alabama</h3>
+                <p>To fight the rising rates of addiction and substance abuse, Alabama has implemented a <a
+                        href="https://www.alabamapublichealth.gov/publications/assets/ah0718.pdf">four-pronged
+                        approach</a>
+                    to
+                    solving the crisis: Prevention, Intervention, Treatment, and Community Responses. Prevention
+                    included
+                    modernizing the Prescription Drug Monitoring Program. The intervention prong includes updating drug
+                    trafficking laws and, in conjunction with the Alabama Drug Courts, encouraging medicated assisted
+                    treatment. Treatment strategies include increasing access to care for those with opioid addiction
+                    and
+                    community response strategies, including expanding access to naloxone, which the state received a 12
+                    million dollar grant.</p>
+                <h3>Alabama’s Prescription Drug Monitoring Program (PDMP)</h3>
+                <p>Alabama’s Prescription Drug Monitoring Program detects prescription medication abuse under the
+                    Alabama
+                    Uniform Controlled Substances Act. PDMP has been updated since 2007 to require all dispensed
+                    prescription drugs to be tracked through an electronic database. The goals of Alabama’s PDMP are to
+                    reduce and prevent prescription drug abuse. Treatment Centers in Alabama Many alcohol and drug
+                    addiction
+                    recovery centers are available in Alabama to help get you or your loved one’s life back on track.
+                    After
+                    determining to get help for a drug or alcohol dependency, the next step is figuring out where to go.
+                    It’s critical to take into account all treatment options, and occasionally the right choice may be
+                    far
+                    from home. Many people prefer to journey out of their home town or state for rehab. Traveling for
+                    addiction rehab has a few advantages for the patient. The main advantage is the ability to begin
+                    treatment with a “fresh start” in a new and healthy environment. Being in an unfamiliar place allows
+                    the
+                    person suffering to break old, negative habits, construct new relationships, and remove themselves
+                    from
+                    potentially toxic environments and people. Work together with your insurance company to weigh your
+                    rehab
+                    options and see which facilities are covered by your plan.</p>
+                <h3>Find Addiction Treatment in Alabama</h3>
+                <p>Making the life-changing decision to gain freedom from active addiction is one of the most critical
+                    choices you or your loved one can make. Whether you’re looking for specific treatment services or
+                    need
+                    help deciding which rehab is right for you...<a
+                        href="https://addictionhelplineamerica.com/">Addiction
+                        Helpline America</a> can help. Call today to speak with an addiction specialist (844) 377-8070.
+                </p>
+
+                <h3>Education And Information About Addiction</h3>
+                <p>There are a range of websites providing easily accessible information about substance use disorders.
+                </p>
+                <div class="ColumnWrap ColumnWrap--triple  EditorContent">
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title"><a href="https://www.samhsa.gov/">The Substance Abuse and Mental
+                                        Health
+                                        Services Administration </a></p>
+                                <p class="Stat__subtitle">(SAMHSA)</p>
+                                <div class="Stat__body">
+                                    <p>
+                                        Has free resources and publications, including pamphlets for families where
+                                        addiction is
+                                        present, information on family therapy, and what is involved in substance use
+                                        disorder
+                                        treatment and a treatment finder tool.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title"><a href="https://easyread.drugabuse.gov/">The National Institute
+                                        on
+                                        Drug
+                                        Abuse</a></p>
+                                <p class="Stat__subtitle"></p>
+                                <div class="Stat__body">
+                                    <p>
+                                        Has provided helpful, easy-to-read drug facts. The National Institute of Alcohol
+                                        Abuse and
+                                        Alcoholism also contains information about alcohol and alcohol use disorder.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title"><a href="https://suicidepreventionlifeline.org/">National Suicide
+                                        Prevention Lifeline</a></p>
+                                <p class="Stat__subtitle"></p>
+                                <div class="Stat__body">
+                                    <p>
+                                        This crisis hotline can help with a lot of issues, not just suicide. For
+                                        example,
+                                        anyone who
+                                        feels sad, hopeless, or suicidal; family and friends who are concerned about a
+                                        loved
+                                        one;
+                                        victims of bullying; or anyone who is interested in mental health treatment
+                                        referrals can call
+                                        1-800-273-TALK (8255). Callers are connected with a professional who will talk
+                                        with
+                                        them about
+                                        what they’re feeling or concerns for other family and friends.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ColumnWrap ColumnWrap--triple  EditorContent">
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title"><a href="http://teens.drugabuse.gov">NIDA for Teens</a></p>
+                                <p class="Stat__subtitle"></p>
+                                <div class="Stat__body">
+                                    <p>
+                                        The National Institute on Drug Abuse (NIDA) developed this website. Teens can
+                                        get
+                                        facts about
+                                        drugs and drug effects, read advice from fellow teens, watch educational videos,
+                                        download cool
+                                        anti-drug stuff, and try their hand at brain games.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title"><a href="https://www.aa.org/">Alcoholics Anonymous (AA)</a></p>
+                                <p class="Stat__subtitle"></p>
+                                <div class="Stat__body">
+                                    <p>
+                                        Alcoholics Anonymous is a fellowship of men and women who share their
+                                        experience,
+                                        strength,
+                                        and hope with each other that they may solve their common problem and help other
+                                        recover from
+                                        alcoholism. The only requirement for membership is a desire to stop drinking.
+                                        There
+                                        are no
+                                        dues or fees, and AA is not allied with any sect, denomination, politics,
+                                        organization, or
+                                        institution.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title"><a href="https://www.na.org/">Narcotics Anonymous (NA)</a></p>
+                                <p class="Stat__subtitle"></p>
+                                <div class="Stat__body">
+                                    <p>
+                                        Narcotics Anonymous is a 12-step fellowship of recovering addicts. Membership is
+                                        open to all
+                                        drug addicts, regardless of the particular drug or combination of drugs used.
+                                        Meetings are
+                                        free.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ColumnWrap ColumnWrap--triple  EditorContent">
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title"><a href="https://al-anon.org/">Al-Anon</a></p>
+                                <p class="Stat__subtitle"></p>
+                                <div class="Stat__body">
+                                    <p>
+                                        Al-Anon is a free, nonprofit organization that supports and provides literature
+                                        to
+                                        family
+                                        members and friends of alcoholics.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title"><a href="https://www.nar-anon.org/">Nar-Anon</a></p>
+                                <p class="Stat__subtitle"></p>
+                                <div class="Stat__body">
+                                    <p>
+                                        Nar-Anon is a 12-step program designed to help relatives and friends of addicts
+                                        recover from
+                                        the effects of living with an addicted relative or friend.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ColumnWrap__column   EditorContent">
+                        <div class="Stat">
+                            <div class="Stat__inner">
+                                <p class="Stat__title"><a href="https://www.familiesagainstnarcotics.org/">Families
+                                        Against
+                                        Narcotics</a></p>
+                                <p class="Stat__subtitle"></p>
+                                <div class="Stat__body">
+                                    <p>
+                                        At Families Against Narcotics, we believe that compassion &gt; stigma, and we
+                                        assist
+                                        individuals
+                                        and families affected by substance use disorder with the respect, empathy, and
+                                        compassion they
+                                        deserve.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="InContentCTA InContentCTA--normal">
+                    <h3 class="InContentCTA__heading">Ready to get help?</h3>
+                    <p class="InContentCTA__subheading">Don't wait another minute for that right moment to be set
+                        free.<br>Take that bold step and call Addiction Helpline America today.</p>
+                    <p class="InContentCTA__phone">
+                        <span class="InContentCTA__label">Get Help Now</span>
+                        <a class="btn btn-primary phone-number" href="tel:8443778070"
+                            data-invoca-campaign-id="ACMainBundle">(844) 377-8070</a>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End, Page main body content part ends here-->
+
+
+    <!-- Page sources -->
+    <div class="Page__sources">
+        <div class="Container">
+            <div class="Page__sources__content">
+                <div class="PageFooter PageFooter--author Tabs">
+
+
+                    <h5>Are you willing to travel for rehab and leave the state of Alabama? Select the state below to
+                        get
+                        started.</h5>
+                    <div class="CityDropdownCTA">
+                        <div class="CityDropdownCTA__dropdown Dropdown text-center">
+                            <button class="Dropdown__button btn btn-small btn-white" onclick="Function()"
+                                data-toggle="CityDropdownMenu" aria-controls="CityDropdownMenu" data-is-focus="false"
+                                data-yeti-box="CityDropdownMenu" aria-haspopup="true" aria-expanded="false"
+                                id="5dwjjk-dd-anchor">
+                                Select A State <span class="fa fa-angle-down"></span>
+                            </button>
+                            <script>
+                                function Function() {
+                                    document.getElementById("Dropdown").classList.toggle("is-open");
+                                }</script>
+                            <div class="Dropdown__menu dropdown-pane has-position-bottom has-alignment-left"
+                                id="Dropdown" data-dropdown="u9ngxy-dropdown" data-auto-focus="true"
+                                aria-labelledby="5dwjjk-dd-anchor" aria-hidden="true" data-yeti-box="CityDropdownMenu"
+                                data-resize="CityDropdownMenu" data-events="resize" style="top: 38px; left: 0px;">
+                                <ul class="clearfix Dropdown__list">
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/alabama">Alabama</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/alaska">Alaska</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/arizona">Arizona</a>
+
+                                    </li>
+
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/arkansas">Arkansas</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/california">California</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/colorado">Colorado</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/connecticut">Connecticut</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/delaware">Delaware</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/florida">Florida</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/georgia">Georgia</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/hawaii">Hawaii</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/idaho">Idaho</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/illinois">Illinois</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/indiana">Indiana</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/iowa">Iowa</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/kansas">Kansas</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/kentucky">Kentucky</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/louisiana">Louisiana</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/maine">Maine</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/maryland">Maryland</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/massachusetts">massachusetts</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/Michigan">Michigan</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/Minnesota">Minnesota</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/mississippi">Mississippi</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/missouri">Missouri</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/montana">Montana</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/nebraska">Nebraska</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/nevada">Nevada</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/newhampshire">New
+                                            Hampshire</a> </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/newjersey">New
+                                            Jersey</a> </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/newmexico">New
+                                            Mexico</a> </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/newyork">New
+                                            York</a></li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/northcarolina">North
+                                            Carolina</a> </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/northdakota">North
+                                            Dakota</a></li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/ohio">Ohio</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/oklahoma">Oklahoma</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/oregon">Oregon</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/pennsylvania">Pennsylvania</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/rhodeisland">Rhode
+                                            Island</a></li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/southcarolina">South
+                                            Carolina</a> </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/southdakota">South
+                                            Dakota</a> </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/tennessee">Tennessee</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/texas">Texas</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/utah">Utah</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/vermont">Vermont</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/virginia">Virginia</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/washington">Washington</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a href="https://addictionhelplineamerica.com/findrehab/state/westvirgina">West
+                                            Virginia</a> </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/wisconsin">Wisconsin</a>
+                                    </li>
+                                    <li class="Dropdown__list__item">
+                                        <a
+                                            href="https://addictionhelplineamerica.com/findrehab/state/wyoming">Wyoming</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End page sources -->
+
+    <!-- Cities list -->
+    <div class="CitiesList">
+        <div class="Container">
+            <h3 class="CitiesList__heading">Top Cities in Alabama</h3>
+            <ul class="StateLinks">
+                <li><a href="https://addictionhelplineamerica.com/findrehab/results/alabama/birmingham">Birmingham <span
+                            class="fa fa-angle-right"></span></a></li>
+                <li><a href="https://addictionhelplineamerica.com/findrehab/results/alabama/huntsville">Huntsville <span
+                            class="fa fa-angle-right"></span></a></li>
+                <li><a href="https://addictionhelplineamerica.com/findrehab/results/alabama/montgomery">Montgomery <span
+                            class="fa fa-angle-right"></span></a></li>
+                <li><a href="https://addictionhelplineamerica.com/findrehab/results/alabama/mobile">Mobile <span
+                            class="fa fa-angle-right"></span></a></li>
+                <li><a href="https://addictionhelplineamerica.com/findrehab/results/alabama/tuscaloosa">Tuscaloosa <span
+                            class="fa fa-angle-right"></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Cities list-->
+
+    <!-- Submit center -->
+    <div class="py2 md-py3 bg-blue white">
+        <div class="Container">
+            <div class="d-flex flex-wrap text-center align-items-center justify-content-between">
+                <h3 class="m0 p0 md-col-4 col-12 col-lg-3" style="color:white;">Add or Feature Your Center</h3>
+                <p class="md-col-5 col-12 m0 md-px2 md-py0 px0 py2 col-lg-5">Looking to feature or list your rehab on
+                    our
+                    site? Simply fill out the form and one of our marketing specialists will get back to you shortly.
+                </p>
+                <p class="md-col-3 col-12 m0 center col-lg-3"><a href="#" class="btn btn-outline">Submit Your Center</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Submit center -->
+    <!-- Footer-->
+    <footer class="Footer">
+        <div class="Container Container--lvl0">
+        </div>
+        <div class="Footer__bottom">
+            <div class="Container">
+                <p class="Footer__copyright">
+                    <span class="Footer__copyright-primary">
+                        Copyright © 2020 Addictionhelplineamerica.com
+                    </span>
+                    <span class="Footer__copyright-secondary">
+                        For immediate treatment help call:<br class="md-hide lg-hide">
+                        <a class="phone-number white" href="tel:8443778070">(844) 377-8070</a>
+                    </span>
+                </p>
+                <p class="Footer__social-media">
+                    <span class="Footer__social-media__icon">
+                        <a href="https://www.facebook.com/addictionhelplineamerica/" title="Facebook" target="_blank">
+                            <span class="fa fa-facebook"></span>
+                        </a>
+                    </span>
+                    <span class="Footer__social-media__icon">
+                        <a href="https://twitter.com/helplineamerica" title="Twitter" target="_blank">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </span>
+                    <span class="Footer__social-media__icon">
+                        <a href="https://www.instagram.com/addictionhelplineamerica/" title="Instagram" target="_blank">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+                    </span>
+                </p>
+                <ul class="Footer__menu-secondary">
+                    <li class="menu-item menu-about-us">
+                        <a href="https://addictionhelplineamerica.com/about/">About Us</a>
+                    </li>
+                    <li class="menu-item menu-contact-us">
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li class="menu-item menu-privacy-policy">
+                        <a href="https://addictionhelplineamerica.com/privacy/">Privacy Policy</a>
+                    </li>
+                    <li class="menu-item menu-terms-of-use">
+                        <a href="https://addictionhelplineamerica.com/termsofuse/">Terms of Use</a>
+                    </li>
+                </ul>
+                <ul class="Footer__button-menu">
+                    <li>
+                        <a class="btn btn-tiny btn-blue-dark" tabindex="0">
+                            <svg class="Icon Icon--phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 28.2">
+                                <path d="M17.8,0H1.2C0.5,0,0,0.5,0,1.2l0,0V27c0,0.7,0.5,1.2,1.2,1.2h16.6c0.7,
+                  0,1.2-0.5,1.2-1.2v0V1.2C19,0.5,18.5,0,17.8,0C17.8,0,17.8,0,17.8,
+                  0z
+                  M9.5,26.6c-1.1,0-2-0.9-2-2s0.9-2,2-2c1.1,0,2,0.9,2,2C11.5,25.7,10.6,
+                  26.6,9.5,26.6L9.5,26.6L9.5,26.6z
+                  M15.9,20.5c0,0.5-0.4,0.9-0.9,0.9l0,
+                  0H4c-0.5,0-0.9-0.4-0.9-0.9c0,0,0,0,0,0V4.1c0-0.5,0.4-0.9,0.9-0.9l0,
+                  0h11c0.5,0,0.9,0.4,0.9,0.9c0,0,0,0,0,0V20.5z"></path>
+                            </svg> Where do calls go?
+                        </a>
+                    </li>
+                </ul>
+                <p class="Footer__disclaimer">
+                    This website is designed for educational purposes only and does not provide medical advice. The
+                    information on this website should not be used to diagnose or treat a health problem or disease.
+                    This website is not a substitute for professional medical
+                    care from a licensed physician. If you have, or suspect you may have, a health problem you should
+                    consult your health care provider. The publishers, authors, editors, and contributors of this
+                    website shall have no liability, obligation, or responsibility
+                    to any person or entity for any losses, damages, or adverse consequences alleged to have happened
+                    directly or indirectly as a result of material on this website, or interaction with a treatment
+                    center listed in our directory. If you or someone
+                    you know is experiencing a medical emergency, call 911 immediately.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <div class="MobileFlyout">
+        <div class="MobileFlyout__cta">
+            <p class="MobileFlyout__copy">Get Help Now. Call Addiction Helpline America Today</p>
+            <p class="MobileFlyout__number">
+                <a class="btn btn-primary  phone-number " href="tel:8443778070"
+                    data-invoca-campaign-id="ACMainBundle">(844)
+                    377-8070</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
